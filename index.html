@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#0B0D12" name="theme-color"/>
+<meta content="Instalações elétricas, energia solar fotovoltaica, deteção de incêndio e carregadores elétricos em Amarante. Peça orçamento à Acenando aos Números." name="description"/>
+<title>
+   Acenando aos Números | Eletricidade, Energia Solar e Segurança em Amarante
+  </title>
+<link href="assets/logo.png" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<script>
+   tailwind.config={theme:{extend:{fontFamily:{sans:['DM Sans','sans-serif'],display:['Manrope','sans-serif']},colors:{navy:'#101218',electric:'#C69A3B',mint:'#22C55E'}}}}
+  </script>
+<style>
+   html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif}h1,h2,h3{font-family:'Manrope',sans-serif}.glass{background:rgba(255,255,255,.94);backdrop-filter:blur(16px)}.hero-grid{background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:52px 52px}.shadow-blue{box-shadow:0 18px 48px rgba(0,82,255,.2)}.card-hover{transition:transform .25s,box-shadow .25s}.card-hover:hover{transform:translateY(-6px);box-shadow:0 24px 55px rgba(15,23,42,.11)}.hero-img{mask-image:linear-gradient(to bottom,black 78%,transparent 100%)}.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}
+  </style>
+<style>
+   /* Identidade premium: grafite, preto e dourado do logótipo */
+.glass{background:rgba(11,13,18,.96);backdrop-filter:blur(18px)}
+header nav a,header strong{color:#F3E9D2!important}
+header span{color:#B8B5AE!important}
+#mobileNav{background:#11141B;color:#F1F1F1}
+body{background:#0B0D12;color:#E7E8EA}
+h1,h2,h3{letter-spacing:-.025em}
+section:not(#inicio):not(#contactos) h2,section:not(#inicio):not(#contactos) h3{color:#F4F1EB!important}
+section:not(#inicio):not(#contactos) p{color:#B7BBC4}
+.card-hover{background:#1B1E26;border-color:rgba(212,175,85,.16)}
+.card-hover:hover{border-color:rgba(212,175,85,.55);box-shadow:0 22px 45px rgba(0,0,0,.35)}
+#sobre .bg-white\/95{background:rgba(24,26,33,.96)}
+#sobre .bg-white\/95 strong{color:#F4F1EB}
+#projetos .bg-electric{background:#242018}
+#contactos{background:#0F1118}
+#contactos .text-blue-300{color:#E3B957}
+footer{background:#07080B}
+a[href^="https://wa.me/"]{color:#fff!important}
+a[href^="https://wa.me/"]:focus-visible{outline:3px solid #B9F5CB;outline-offset:3px}
+  </style>
+<style>
+/* Contraste do cabeçalho e ícones oficiais das redes sociais */
+header.glass{background:rgba(247,248,250,.98)!important;border-bottom:1px solid #d9dce3!important;box-shadow:0 6px 25px rgba(0,0,0,.13)}
+header strong,header nav a{color:#111827!important}
+header span{color:#4b5563!important}
+header nav a:hover{color:#9b741d!important}
+header #menuBtn{color:#111827;border-color:#d1d5db}
+.social-icon{width:46px;height:46px;display:inline-flex;align-items:center;justify-content:center;border-radius:14px;background:#fff;box-shadow:0 5px 16px rgba(0,0,0,.15);border:1px solid #e5e7eb;transition:transform .2s,box-shadow .2s}
+.social-icon:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.social-icon svg{width:26px;height:26px;display:block}
+.social-icon.instagram svg{stroke:#e1306c;stroke-width:2.3;fill:none}
+.social-icon.facebook svg{fill:#1877f2}
+.social-icon:focus-visible{outline:3px solid #d4af55;outline-offset:3px}
+.social-icon.header-social{width:38px;height:38px;border-color:#d8dbe2}
+.social-icon.header-social svg{width:21px;height:21px}
+#mobileNav{background:#f7f8fa!important;color:#111827!important;border-color:#d9dce3!important}
+#mobileNav a{color:#111827!important}
+
+/* Destaque dos cartões sociais, preservando as cores e os SVG originais */
+.social-feature-card{background:#22252e;border:1px solid rgba(212,175,85,.22);box-shadow:0 14px 34px rgba(0,0,0,.16);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.social-feature-card:hover{transform:translateY(-4px);border-color:rgba(212,175,85,.5);box-shadow:0 22px 44px rgba(0,0,0,.28)}
+.social-feature-card .social-icon{width:66px;height:66px;border-radius:18px;flex-shrink:0}
+.social-feature-card .social-icon svg{width:36px;height:36px}
+.social-feature-cta{display:inline-flex;align-items:center;gap:12px;padding:13px 18px;border-radius:12px;background:#343946;color:#fff;font-weight:700;border:1px solid rgba(255,255,255,.16);text-decoration:none;transition:background .2s ease}
+.social-feature-cta:hover{background:#414858}
+.social-feature-cta:focus-visible{outline:3px solid #d4af55;outline-offset:3px}
+@media(max-width:640px){.social-feature-card{padding:24px}.social-feature-card .social-icon{width:58px;height:58px}}
+</style></head>
+<body class="bg-[#0B0D12] text-slate-200 antialiased">
+<header class="fixed z-50 top-0 inset-x-0 glass border-b border-white/10">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 h-[78px] flex items-center justify-between gap-5">
+<a class="flex items-center gap-3 shrink-0" href="#inicio">
+<img alt="Logótipo Acenando aos Números" class="h-14 w-20 object-contain" src="assets/logo.png"/>
+<div class="leading-tight">
+<strong class="text-[13px] sm:text-sm font-extrabold tracking-tight text-navy block">
+       ACENANDO AOS NÚMEROS
+      </strong>
+<span class="text-[10px] sm:text-xs tracking-wider uppercase text-slate-400">
+       Eletricidade · Energia · Segurança
+      </span>
+</div>
+</a>
+<nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+<a class="hover:text-electric" href="#servicos">
+      Serviços
+     </a>
+<a class="hover:text-electric" href="#projetos">
+      Projetos
+     </a>
+<a class="hover:text-electric" href="#sobre">
+      Sobre nós
+     </a>
+<a class="hover:text-electric" href="#contactos">
+      Contactos
+     </a>
+</nav>
+<div class="hidden md:flex items-center gap-3">
+<a aria-label="Abrir Instagram da empresa" class="social-icon instagram header-social" href="https://www.instagram.com/acenandoaosnumeros/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="19" rx="5.5" width="19" x="2.5" y="2.5"></rect><circle cx="12" cy="12" r="4.1"></circle><circle cx="17.8" cy="6.4" fill="#e1306c" r="1" stroke="none"></circle></svg></a><a aria-label="Procurar Acenando aos Números no Facebook" class="social-icon facebook header-social" href="https://www.facebook.com/search/top?q=Acenando%20aos%20N%C3%BAmeros" rel="noopener noreferrer" target="_blank" title="Facebook (pesquisa, perfil por confirmar)"><svg aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.25.2 2.25.2v2.47H15.2c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"></path></svg></a>
+<a class="text-white rounded-xl px-5 py-3 text-sm font-bold flex gap-2 items-center bg-[#22C55E] hover:bg-[#16A34A] px-4 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+      Pedir orçamento
+     </a>
+</div>
+<button aria-expanded="false" aria-label="Abrir menu" class="md:hidden p-2 rounded-lg border border-white/10" id="menuBtn">
+<i data-lucide="menu">
+</i>
+</button>
+</div>
+<nav class="hidden md:hidden border-t border-white/10 bg-[#151820] px-6 py-5 flex-col gap-4 text-sm font-semibold" id="mobileNav">
+<a href="#servicos">
+     Serviços
+    </a>
+<a href="#projetos">
+     Projetos
+    </a>
+<a href="#sobre">
+     Sobre nós
+    </a>
+<a href="#contactos">
+     Contactos
+    </a>
+<a aria-label="Abrir Instagram da empresa" class="social-icon instagram" href="https://www.instagram.com/acenandoaosnumeros/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="19" rx="5.5" width="19" x="2.5" y="2.5"></rect><circle cx="12" cy="12" r="4.1"></circle><circle cx="17.8" cy="6.4" fill="#e1306c" r="1" stroke="none"></circle></svg></a><a aria-label="Procurar Acenando aos Números no Facebook" class="social-icon facebook" href="https://www.facebook.com/search/top?q=Acenando%20aos%20N%C3%BAmeros" rel="noopener noreferrer" target="_blank" title="Facebook (pesquisa, perfil por confirmar)"><svg aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.25.2 2.25.2v2.47H15.2c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"></path></svg></a>
+</nav>
+</header>
+<main>
+<section class="relative overflow-hidden bg-navy pt-36 pb-20 lg:pt-44 lg:pb-28 text-white" id="inicio">
+<div class="absolute inset-0 hero-grid opacity-40">
+</div>
+<div class="absolute -right-40 top-10 w-[600px] h-[600px] rounded-full bg-electric/20 blur-[120px]">
+</div>
+<div class="relative max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 border border-blue-400/30 bg-blue-400/10 rounded-full px-4 py-2 text-xs sm:text-sm text-blue-200 mb-7">
+<span class="w-2 h-2 bg-mint rounded-full">
+</span>
+       Soluções técnicas em Amarante e no Norte
+      </div>
+<h1 class="font-extrabold tracking-tight leading-[1.1] text-4xl sm:text-5xl xl:text-[62px]">
+       Energia que transforma.
+       <span class="text-[#70A0FF]">
+        Segurança que protege.
+       </span>
+</h1>
+<p class="text-slate-300 text-lg leading-relaxed mt-7 max-w-xl">
+       Instalações elétricas de baixa tensão, sistemas de deteção de incêndio, painéis solares fotovoltaicos e carregadores para veículos elétricos. Soluções para habitações, empresas e espaços comerciais.
+      </p>
+<div class="flex flex-col sm:flex-row gap-3 mt-9">
+<a class="inline-flex justify-center items-center gap-3 text-white font-bold px-7 py-4 rounded-xl transition bg-[#22C55E] hover:bg-[#16A34A] px-4 py-3 shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+        Pedir orçamento no WhatsApp
+       </a>
+<a class="inline-flex justify-center items-center gap-2 border border-white/25 hover:bg-white/10 px-7 py-4 rounded-xl font-semibold" href="#projetos">
+        Ver trabalhos realizados
+        <i class="w-4 h-4" data-lucide="arrow-down-right">
+</i>
+</a>
+</div>
+<div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300">
+<span class="flex items-center gap-2">
+<i class="w-4 h-4 text-mint" data-lucide="check-circle-2">
+</i>
+        Projetos à medida
+       </span>
+<span class="flex items-center gap-2">
+<i class="w-4 h-4 text-mint" data-lucide="check-circle-2">
+</i>
+        Soluções eficientes
+       </span>
+<span class="flex items-center gap-2">
+<i class="w-4 h-4 text-mint" data-lucide="map-pin">
+</i>
+        Amarante, Portugal
+       </span>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-[28px] overflow-hidden border border-white/15 shadow-2xl h-[460px] lg:h-[530px]">
+<img alt="Instalação de painéis solares fotovoltaicos" class="w-full h-full object-cover object-center" src="assets/projeto-4.jpg"/>
+</div>
+<div class="absolute -bottom-5 left-4 sm:-left-6 bg-[#151820] text-navy rounded-2xl shadow-2xl p-5 flex items-center gap-4 max-w-[300px]">
+<div class="w-12 h-12 bg-[#2A241A] rounded-xl flex items-center justify-center text-electric">
+<i class="w-6 h-6" data-lucide="zap">
+</i>
+</div>
+<div>
+<strong class="block text-sm">
+         Do projeto à instalação
+        </strong>
+<span class="block text-xs text-slate-400 mt-1">
+         Soluções elétricas e energéticas
+        </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-6 bg-[#11141B] border-b border-white/10">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm font-semibold text-slate-300">
+<div class="flex items-center gap-2">
+<i class="text-electric w-5 h-5" data-lucide="plug-zap">
+</i>
+      Instalações elétricas
+     </div>
+<div class="flex items-center gap-2">
+<i class="text-electric w-5 h-5" data-lucide="shield-check">
+</i>
+      Segurança
+     </div>
+<div class="flex items-center gap-2">
+<i class="text-electric w-5 h-5" data-lucide="sun">
+</i>
+      Energia solar
+     </div>
+<div class="flex items-center gap-2">
+<i class="text-electric w-5 h-5" data-lucide="car-front">
+</i>
+      Mobilidade elétrica
+     </div>
+</div>
+</section>
+<section class="py-24 bg-[#151820]" id="servicos">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="reveal max-w-3xl">
+<span class="text-electric font-bold uppercase tracking-[.2em] text-xs">
+       O que fazemos
+      </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mt-4">
+       Soluções completas para um futuro mais seguro e eficiente.
+      </h2>
+<p class="text-slate-400 mt-5 text-lg">
+       Da infraestrutura elétrica à produção de energia renovável, desenvolvemos soluções adaptadas às necessidades de cada espaço.
+      </p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+<article class="reveal card-hover border border-white/10 rounded-2xl p-7">
+<div class="w-14 h-14 rounded-2xl bg-[#2A241A] text-electric flex items-center justify-center">
+<i class="w-7 h-7" data-lucide="cable">
+</i>
+</div>
+<h3 class="text-lg font-extrabold text-navy mt-7">
+        Instalações elétricas de baixa tensão
+       </h3>
+<p class="text-slate-400 text-sm leading-7 mt-4">
+        Execução e renovação de instalações elétricas em habitações, edifícios e espaços comerciais. Quadros elétricos, circuitos, distribuição e soluções dimensionadas para cada utilização.
+       </p>
+<a class="inline-flex items-center gap-2 mt-7 font-bold text-sm bg-[#22C55E] hover:bg-[#16A34A] text-white rounded-xl px-4 py-3 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Pretendo%20or%C3%A7amento%20para%20uma%20instala%C3%A7%C3%A3o%20el%C3%A9trica." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+        Pedir orçamento
+       </a>
+</article>
+<article class="reveal card-hover border border-white/10 rounded-2xl p-7">
+<div class="w-14 h-14 rounded-2xl bg-[#2A241A] text-electric flex items-center justify-center">
+<i class="w-7 h-7" data-lucide="shield-alert">
+</i>
+</div>
+<h3 class="text-lg font-extrabold text-navy mt-7">
+        Deteção de incêndio e segurança
+       </h3>
+<p class="text-slate-400 text-sm leading-7 mt-4">
+        Sistemas de deteção e alerta de incêndio e soluções técnicas de segurança. Ajudamos a proteger pessoas, instalações e equipamentos com sistemas adequados a cada projeto.
+       </p>
+<a class="inline-flex items-center gap-2 mt-7 font-bold text-sm bg-[#22C55E] hover:bg-[#16A34A] text-white rounded-xl px-4 py-3 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Pretendo%20or%C3%A7amento%20para%20dete%C3%A7%C3%A3o%20de%20inc%C3%AAndio%20e%20seguran%C3%A7a." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+        Pedir orçamento
+       </a>
+</article>
+<article class="reveal card-hover border border-white/10 rounded-2xl p-7">
+<div class="w-14 h-14 rounded-2xl bg-[#2A241A] text-electric flex items-center justify-center">
+<i class="w-7 h-7" data-lucide="solar-panel">
+</i>
+</div>
+<h3 class="text-lg font-extrabold text-navy mt-7">
+        Energia renovável e painéis solares
+       </h3>
+<p class="text-slate-400 text-sm leading-7 mt-4">
+        Instalação de sistemas solares fotovoltaicos para produção de eletricidade. Uma solução para aproveitar a energia do sol e reduzir a dependência da rede elétrica.
+       </p>
+<a class="inline-flex items-center gap-2 mt-7 font-bold text-sm bg-[#22C55E] hover:bg-[#16A34A] text-white rounded-xl px-4 py-3 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Pretendo%20or%C3%A7amento%20para%20pain%C3%A9is%20solares." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+        Pedir orçamento
+       </a>
+</article>
+<article class="reveal card-hover border border-white/10 rounded-2xl p-7">
+<div class="w-14 h-14 rounded-2xl bg-[#2A241A] text-electric flex items-center justify-center">
+<i class="w-7 h-7" data-lucide="battery-charging">
+</i>
+</div>
+<h3 class="text-lg font-extrabold text-navy mt-7">
+        Carregadores para veículos elétricos
+       </h3>
+<p class="text-slate-400 text-sm leading-7 mt-4">
+        Soluções de carregamento para veículos elétricos em garagens, condomínios e empresas, com atenção à infraestrutura existente e às necessidades de utilização.
+       </p>
+<a class="inline-flex items-center gap-2 mt-7 font-bold text-sm bg-[#22C55E] hover:bg-[#16A34A] text-white rounded-xl px-4 py-3 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Pretendo%20or%C3%A7amento%20para%20carregador%20de%20ve%C3%ADculo%20el%C3%A9trico." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+        Pedir orçamento
+       </a>
+</article>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#11141B]" id="projetos">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="flex flex-col sm:flex-row justify-between sm:items-end gap-6 mb-11">
+<div class="max-w-2xl reveal">
+<span class="text-electric font-bold uppercase tracking-[.2em] text-xs">
+        Portefólio
+       </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-4">
+        O nosso trabalho fala por si.
+       </h2>
+<p class="text-slate-400 mt-4">
+        Conheça alguns dos trabalhos realizados em instalações elétricas, sistemas técnicos e energia fotovoltaica.
+       </p>
+</div>
+<a class="font-bold flex items-center gap-2 shrink-0 bg-[#22C55E] hover:bg-[#16A34A] text-white rounded-xl px-4 py-3 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Vi%20os%20vossos%20projetos%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+       Tem um projeto semelhante?
+      </a>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<button class="gallery group relative overflow-hidden rounded-2xl col-span-2 row-span-2 h-[350px] lg:h-[550px] text-left" data-caption="Quadros e instalações elétricas" data-src="assets/projeto-1.jpg">
+<img alt="Quadro elétrico instalado" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="assets/projeto-1.jpg"/>
+<span class="absolute inset-x-0 bottom-0 p-6 text-white font-bold bg-gradient-to-t from-black/70 to-transparent">
+        Quadros e instalações elétricas
+       </span>
+</button>
+<button class="gallery group relative overflow-hidden rounded-2xl h-[170px] lg:h-[267px]" data-caption="Energia solar fotovoltaica" data-src="assets/projeto-4.jpg">
+<img alt="Painéis solares numa cobertura" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="assets/projeto-4.jpg"/>
+</button>
+<button class="gallery group relative overflow-hidden rounded-2xl h-[170px] lg:h-[267px]" data-caption="Infraestruturas técnicas" data-src="assets/projeto-2.jpg">
+<img alt="Armários técnicos de telecomunicações e controlo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="assets/projeto-2.jpg"/>
+</button>
+<button class="gallery group relative overflow-hidden rounded-2xl h-[170px] lg:h-[267px]" data-caption="Sistemas de energia e controlo" data-src="assets/projeto-3.jpg">
+<img alt="Equipamento de energia e sistema de controlo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="assets/projeto-3.jpg"/>
+</button>
+<button class="gallery group relative overflow-hidden rounded-2xl h-[170px] lg:h-[267px]" data-caption="Instalação fotovoltaica" data-src="assets/projeto-6.jpg">
+<img alt="Painéis fotovoltaicos numa cobertura" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="assets/projeto-6.jpg"/>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+<button class="gallery overflow-hidden rounded-2xl h-48 md:h-60" data-caption="Produção de energia solar" data-src="assets/projeto-5.jpg">
+<img alt="Instalação de painéis solares" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="assets/projeto-5.jpg"/>
+</button>
+<button class="gallery overflow-hidden rounded-2xl h-48 md:h-60" data-caption="Painéis solares em cobertura" data-src="assets/projeto-7.jpg">
+<img alt="Painéis solares numa cobertura industrial" class="w-full h-full object-cover hover:scale-105 transition duration-500" src="assets/projeto-7.jpg"/>
+</button>
+<div class="col-span-2 md:col-span-1 bg-electric rounded-2xl p-7 md:p-8 text-white flex flex-col justify-between">
+<i class="w-8 h-8" data-lucide="move-up-right">
+</i>
+<div>
+<h3 class="font-extrabold text-2xl">
+         O próximo projeto pode ser o seu.
+        </h3>
+<a class="inline-flex items-center gap-2 font-bold mt-4 text-sm bg-[#22C55E] hover:bg-[#16A34A] text-white rounded-xl px-4 py-3 transition shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+         Fale connosco
+        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24" id="sobre">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+<div class="rounded-3xl overflow-hidden relative h-[420px]">
+<img alt="Trabalhos técnicos da Acenando aos Números" class="w-full h-full object-cover" src="assets/projeto-2.jpg"/>
+<div class="absolute bottom-5 left-5 right-5 bg-white/95 rounded-xl p-5 flex items-center gap-3">
+<i class="text-electric w-6 h-6" data-lucide="map-pinned">
+</i>
+<div>
+<strong class="block text-navy">
+         Baseados em Vila Caíz, Amarante
+        </strong>
+<span class="text-slate-400 text-sm">
+         Serviços em Amarante e no Norte
+        </span>
+</div>
+</div>
+</div>
+<div class="reveal">
+<span class="text-electric font-bold uppercase tracking-[.2em] text-xs">
+       Quem somos
+      </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-navy mt-4">
+       Tecnologia aplicada a espaços mais eficientes e protegidos.
+      </h2>
+<p class="text-slate-300 leading-8 mt-6">
+       A
+       <strong>
+        Acenando aos Números, Unipessoal, Lda
+       </strong>
+       desenvolve trabalhos na área das instalações elétricas, energias renováveis e sistemas de segurança. Com sede em Vila Caíz, Amarante, apresentamos soluções técnicas ajustadas às necessidades de clientes particulares e empresariais.
+      </p>
+<p class="text-slate-300 leading-8 mt-4">
+       Quer esteja a renovar uma instalação elétrica, a preparar um edifício para mobilidade elétrica ou a investir em produção solar, o primeiro passo é compreender o seu projeto.
+      </p>
+<a class="inline-flex items-center gap-2 mt-7 text-white font-bold rounded-xl px-6 py-4 transition bg-[#22C55E] hover:bg-[#16A34A] px-4 py-3 shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20sobre%20o%20meu%20projeto." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+       Falar sobre o meu projeto
+      </a>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-24 bg-[#181A20]" id="redes-sociais">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mb-10">
+      <span class="text-electric font-bold uppercase tracking-[.2em] text-xs">Acompanhe-nos</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Veja as obras, os projetos e as novidades.</h2>
+      <p class="text-slate-300 mt-4 leading-7">Conheça o nosso trabalho de perto. Acompanhe instalações elétricas, soluções de segurança e projetos de energia solar nas nossas redes sociais.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5 lg:gap-7">
+      <article class="social-feature-card rounded-2xl p-7 sm:p-9 flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-6">
+          <a aria-label="Abrir Instagram da empresa" class="social-icon instagram" href="https://www.instagram.com/acenandoaosnumeros/" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="19" rx="5.5" width="19" x="2.5" y="2.5"></rect><circle cx="12" cy="12" r="4.1"></circle><circle cx="17.8" cy="6.4" fill="#e1306c" r="1" stroke="none"></circle></svg></a>
+          <div><p class="text-xs font-bold tracking-[.15em] uppercase text-slate-400">Siga-nos no</p><h3 class="text-2xl font-extrabold text-white">Instagram</h3></div>
+        </div>
+        <p class="text-slate-300 leading-7 mb-2">Inspire-se com fotografias dos nossos trabalhos, acompanhe as obras e descubra o resultado de cada projeto.</p>
+        <p class="text-[#E1306C] font-semibold text-sm mb-8">@acenandoaosnumeros</p>
+        <a class="social-feature-cta mt-auto" href="https://www.instagram.com/acenandoaosnumeros/" target="_blank" rel="noopener noreferrer">Conhecer o Instagram <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="social-feature-card rounded-2xl p-7 sm:p-9 flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-6">
+          <a aria-label="Procurar Acenando aos Números no Facebook" class="social-icon facebook" href="https://www.facebook.com/search/top?q=Acenando%20aos%20N%C3%BAmeros" rel="noopener noreferrer" target="_blank" title="Facebook (pesquisa, perfil por confirmar)"><svg aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.25.2 2.25.2v2.47H15.2c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"></path></svg></a>
+          <div><p class="text-xs font-bold tracking-[.15em] uppercase text-slate-400">Acompanhe-nos no</p><h3 class="text-2xl font-extrabold text-white">Facebook</h3></div>
+        </div>
+        <p class="text-slate-300 leading-7 mb-2">Fique a par das novidades da empresa, veja os projetos em destaque e acompanhe as nossas atualizações.</p>
+        <p class="text-[#1877F2] font-semibold text-sm mb-8">Acenando aos Números</p>
+        <a class="social-feature-cta mt-auto" href="https://www.facebook.com/search/top?q=Acenando%20aos%20N%C3%BAmeros" target="_blank" rel="noopener noreferrer" aria-label="Procurar Acenando aos Números no Facebook">Procurar no Facebook <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="bg-navy text-white py-24" id="contactos">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+<div>
+<span class="text-blue-300 font-bold uppercase tracking-[.2em] text-xs">
+       Vamos conversar?
+      </span>
+<h2 class="text-4xl sm:text-5xl font-extrabold mt-5 leading-tight">
+       Tem um projeto em mente?
+       <span class="text-blue-300">
+        Dê-lhe energia.
+       </span>
+</h2>
+<p class="text-slate-300 mt-6 leading-8">
+       Explique-nos o que precisa e peça uma proposta para o seu projeto elétrico, sistema de segurança ou instalação fotovoltaica.
+      </p>
+<a class="inline-flex items-center gap-3 font-extrabold rounded-xl px-7 py-4 mt-8 transition bg-[#22C55E] hover:bg-[#16A34A] text-white px-4 py-3 shadow-[0_8px_24px_rgba(34,197,94,.18)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento.%20O%20meu%20projeto%20%C3%A9%3A" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+       Pedir orçamento sem compromisso
+      </a>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-3xl p-7 sm:p-9 space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-white/10 rounded-xl flex items-center justify-center">
+<i class="w-5 h-5 text-blue-300" data-lucide="phone">
+</i>
+</div>
+<div>
+<svg aria-hidden="true" class="w-5 h-5 text-[#22C55E] shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+<span class="text-sm text-slate-400 text-green-400">
+         Telefone / WhatsApp
+        </span>
+<a class="block text-xl font-bold mt-1 hover:text-blue-300" href="tel:+351917512439">
+         +351 917 512 439
+        </a>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-white/10 rounded-xl flex items-center justify-center">
+<i class="w-5 h-5 text-blue-300" data-lucide="map-pin">
+</i>
+</div>
+<div>
+<span class="text-sm text-slate-400">
+         Morada
+        </span>
+<p class="font-semibold mt-1">
+         Rua da Batalha, n.º 104
+         <br/>
+         4600-781 Vila Caíz, Amarante
+        </p>
+<a class="text-blue-300 text-sm font-bold inline-block mt-2" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+da+Batalha+104+4600-781+Vila+Caiz+Amarante" rel="noopener noreferrer" target="_blank">
+         Ver no Google Maps ↗
+        </a>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 shrink-0 bg-white/10 rounded-xl flex items-center justify-center">
+<i class="w-5 h-5 text-blue-300" data-lucide="building-2">
+</i>
+</div>
+<div>
+<span class="text-sm text-slate-400">
+         Atividade
+        </span>
+<p class="font-semibold mt-1">
+         Instalações elétricas · CAE 43210
+        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#090F1E] text-slate-400 py-8">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-5 text-sm">
+<p>
+     ©
+     <span id="year">
+</span>
+     Acenando aos Números, Unipessoal, Lda. Todos os direitos reservados.
+    </p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#servicos">
+      Serviços
+     </a>
+<a class="hover:text-white" href="#projetos">
+      Projetos
+     </a>
+<a class="hover:text-white" href="https://www.instagram.com/acenandoaosnumeros/" rel="noopener noreferrer" target="_blank">
+      Instagram
+     </a>
+</div>
+</div>
+</footer>
+<a aria-label="Contactar pelo WhatsApp" class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full flex items-center justify-center text-white transition hover:scale-110 bg-[#22C55E] hover:bg-[#16A34A] shadow-[0_10px_35px_rgba(34,197,94,.35)]" href="https://wa.me/351917512439?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="w-9 h-9 shrink-0" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.1-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.015-1.04 2.478s1.064 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.711.226 1.359.194 1.87.118.57-.085 1.758-.718 2.005-1.412.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347M12.004 2C6.486 2 2 6.486 2 12c0 1.764.46 3.489 1.335 5.01L2 22l5.127-1.345A9.93 9.93 0 0 0 12.004 22C17.518 22 22 17.514 22 12S17.518 2 12.004 2m0 18.18a8.14 8.14 0 0 1-4.15-1.137l-.297-.176-3.043.799.812-2.967-.193-.306A8.13 8.13 0 0 1 3.82 12c0-4.51 3.673-8.18 8.184-8.18 4.51 0 8.18 3.67 8.18 8.18s-3.67 8.18-8.18 8.18">
+</path>
+</svg>
+</a>
+<div aria-label="Fotografia do projeto" aria-modal="true" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-5" id="lightbox" role="dialog">
+<button aria-label="Fechar fotografia" class="absolute right-6 top-6 text-white bg-white/15 rounded-full p-3" id="closeLightbox">
+<i data-lucide="x">
+</i>
+</button>
+<div class="max-w-5xl w-full">
+<img alt="Fotografia ampliada de projeto" class="max-h-[80vh] w-full object-contain" id="lightboxImg"/>
+<p class="text-white text-center mt-4 font-semibold" id="lightboxCaption">
+</p>
+</div>
+</div>
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
+</script>
+<script>
+   lucide.createIcons();document.getElementById('year').textContent=new Date().getFullYear();const btn=document.getElementById('menuBtn'),nav=document.getElementById('mobileNav');btn.addEventListener('click',()=>{const open=nav.classList.toggle('hidden');nav.classList.toggle('flex',!open);btn.setAttribute('aria-expanded',String(!open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.add('hidden');nav.classList.remove('flex');btn.setAttribute('aria-expanded','false')}));const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));const lb=document.getElementById('lightbox');document.querySelectorAll('.gallery').forEach(el=>el.addEventListener('click',()=>{document.getElementById('lightboxImg').src=el.dataset.src;document.getElementById('lightboxCaption').textContent=el.dataset.caption;lb.classList.remove('hidden');lb.classList.add('flex');document.body.style.overflow='hidden'}));function closeLb(){lb.classList.add('hidden');lb.classList.remove('flex');document.body.style.overflow=''}document.getElementById('closeLightbox').addEventListener('click',closeLb);lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
+  </script>
+</body>
+</html>
